@@ -2,10 +2,10 @@
 
 # base packages incl. utils, wireless tools, libs
 for pkg in pciutils iperf3 hostapd wpa-supplicant\
-	 bridge-utils htop dropbear dnsmasq dhcp-server\
-	 dhcp-client iptables sysstat git subversion python3\
+	 bridge-utils htop dropbear dnsmasq\
+	 iptables sysstat git subversion python3\
 	 kernel-devsrc binutils packagegroup-core-buildessential\
-	 iw dtc openssl libssl libnl libnl-genl crda
+	 iw dtc openssl libssl libnl libnl-genl
 do
 	echo IMAGE_INSTALL_append += "\" $pkg\"" >> conf/local.conf
 done
