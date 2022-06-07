@@ -5,7 +5,7 @@ for pkg in pciutils iperf3 hostapd wpa-supplicant\
 	 bridge-utils htop dropbear dnsmasq\
 	 iptables sysstat git subversion python3\
 	 kernel-devsrc binutils packagegroup-core-buildessential\
-	 iw dtc openssl libssl libnl libnl-genl
+	 iw dtc openssl libssl libnl libnl-genl bluez-libs-devel
 do
 	echo IMAGE_INSTALL_append += "\" $pkg\"" >> conf/local.conf
 done
