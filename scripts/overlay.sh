@@ -17,5 +17,8 @@ for pkg in pulseaudio-server\
 	 pulseaudio-module-bluez5-device\
 	 pulseaudio-module-bluez5-discover
 do
+	# if conf/local.conf has CONF_VERSION = "2",
+	# adapt IMAGE_INSTALL_append to IMAGE_INSTALL:append
+	# Applicable from Yocto 3.4+ (Honister or above..)
 	echo IMAGE_INSTALL_append += "\" $pkg\"" >> conf/local.conf
 done
