@@ -3,7 +3,7 @@
 # base packages incl. utils, wireless tools, libs
 for pkg in pciutils iperf3 hostapd wpa-supplicant\
 	 bridge-utils htop dropbear dnsmasq\
-	 iptables sysstat git python3\
+	 iptables sysstat git python3 chrony\
 	 kernel-devsrc binutils packagegroup-core-buildessential\
 	 iw dtc openssl libssl libnl libnl-genl rsync\
 	 pulseaudio-server\
